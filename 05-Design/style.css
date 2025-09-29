@@ -22,7 +22,8 @@ Grey color: #495057
 /* ------------------------ */
 body {
   font-family: 'Inter', sans-serif;
-  color:#495057
+  color: #495057;
+  border-bottom: 10px solid #37b24d;
 }
 
 .container {
@@ -63,6 +64,16 @@ h2 {
 .btn:active {
   background-color: #20c997;
 
+}
+
+.btn--small{
+  font-size: 14px;
+  padding: 8px 12px;
+}
+
+.btn--big{
+  font-size: 18px;
+  padding:16px 32px;
 }
 
 /* ------------------------ */
@@ -113,6 +124,9 @@ img {
 
 /* TESTIMONIAL */
 .testimonial-section {
+  background-color: #37b24d;
+  color:#fff;
+  padding: 24px;
 }
 
 .testimonial-box {
@@ -164,4 +178,6 @@ h3 {
 
 footer {
   margin-bottom: 48px;
+  font-size: 14px;
+  color:#868e96
 }
