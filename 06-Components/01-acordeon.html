@@ -31,15 +31,25 @@
     }
 
     .item{
+      box-shadow: 0 0 32px rgba(0,0,0,0.1);
+      padding: 24px;
 
+      display: grid;
+      grid-template-columns:auto 1fr auto;
+      column-gap: 24px;
+      row-gap: 32px;
+      ;
     }
 
     .number, .text{
      font-size: 24px;
      font-weight: 500;
-     color: green;
+     color: blue;
     }
 
+    .number{
+      color:lightgray
+    }
     .text{
 
     }
@@ -47,12 +57,13 @@
     .icon{
       width: 24px;
       height: 24px;
-      stroke: green;
+      stroke: blue;
 
     }
 
     .hidden-box{
-      
+      grid-column: 2;
+      display: none;
     }
 
     .hidden-box p{
@@ -69,7 +80,22 @@
      gap: 12px;
      
     }
+
+    /*Open State*/
+    .open {
+      border-top: 4px solid blue;
+    }
+
+    .open .hidden-box{
+      display: block;
+    }
     
+    .open .number, 
+    .open .text {
+      color: blue;
+    }
+
+
 
   </style>
 </head>
@@ -78,6 +104,53 @@
 
   <div class="acordion">
    <div class="item">
+   <p class="number">01</p>
+   <p class="text">Where are these chairs assembled?</p>
+   
+   <svg xmlns="http://www.w3.org/2000/svg" 
+   class="icon"
+   fill="none" viewBox="0 0 24 24" 
+   stroke-width="1.5" 
+   stroke="currentColor">
+
+   <path stroke-linecap="round" 
+   stroke-linejoin="round" 
+   d="m4.5 12.75 6 6 9-13.5" />
+   </svg>
+
+   <div class="hidden-box">
+    <p>
+     lorem ipsum dolor sit amet, consectetur adipiscing elit.
+     Donec vel mauris quam. Sed vel nunc non mi suscipit Lorem 
+     ipsum dolor sit amet consectetur adipisicing elit. 
+     
+    </p>
+
+     <ul>
+
+       <li>Lorem ipsum dolor sit amet impussn amet dolum impsum
+       
+       </li>
+
+       <li>
+        itaque ducimus repellat laborum ad autem voluptatibus velit?
+        
+       </li>
+           
+       <li>Lorem ipsum dolor sit amet sit mateh lorem dolor ipsum
+        
+       </li>
+
+       <li>Lorem ipsum dolor sit amet dorum lorem ipsum dolor
+      
+       </li>
+
+     </ul>
+
+    </div>
+   </div>
+ 
+   <div class="item open">
    <p class="number">02</p>
    <p class="text">How long do I have to return my chair?</p>
    
@@ -97,36 +170,73 @@
      lorem ipsum dolor sit amet, consectetur adipiscing elit.
      Donec vel mauris quam. Sed vel nunc non mi suscipit Lorem 
      ipsum dolor sit amet consectetur adipisicing elit. 
-     Cum repellendus officiis amet maxime atque hic aut excepturi ut
-      voluptate molestias eligendi iste, sint natus, omnis deleniti 
-      ullam fugit earum quos?
+     
     </p>
 
      <ul>
 
-       <li>Lorem ipsum dolor sit amet 
-        consectetur, adipisicing elit. Dicta dolor natus ut
-        odit qui suscipit, itaque ducimus repellat laborum ad
-        autem voluptatibus velit? Quaerat placeat cum error, 
+       <li>Lorem ipsum dolor sit amet impussn amet dolum impsum
+       
        </li>
 
        <li>
         itaque ducimus repellat laborum ad autem voluptatibus velit?
-        Quaerat placeat cum error, quo molestiae aliquam.
+        
        </li>
            
-       <li>Lorem ipsum dolor sit amet 
-        consectetur, adipisicing elit. Dicta dolor natus ut
-        odit qui suscipit, itaque ducimus repellat laborum ad
-        autem voluptatibus velit? Quaerat placeat cum error,
-        quo molestiae aliquam.
+       <li>Lorem ipsum dolor sit amet sit mateh lorem dolor ipsum
+        
        </li>
 
-       <li>Lorem ipsum dolor sit amet 
-        consectetur, adipisicing elit. Dicta dolor natus ut
-        odit qui suscipit, itaque ducimus repellat laborum ad
-        autem voluptatibus velit? Quaerat placeat cum error,
-        quo molestiae aliquam.
+       <li>Lorem ipsum dolor sit amet dorum lorem ipsum dolor
+      
+       </li>
+
+     </ul>
+
+    </div>
+   </div>
+  
+   <div class="item">
+   <p class="number">03</p>
+   <p class="text">Do u ship to other countries outside the US?</p>
+   
+   <svg xmlns="http://www.w3.org/2000/svg" 
+   class="icon"
+   fill="none" viewBox="0 0 24 24" 
+   stroke-width="1.5" 
+   stroke="currentColor">
+
+   <path stroke-linecap="round" 
+   stroke-linejoin="round" 
+   d="m4.5 12.75 6 6 9-13.5" />
+   </svg>
+
+   <div class="hidden-box">
+    <p>
+     lorem ipsum dolor sit amet, consectetur adipiscing elit.
+     Donec vel mauris quam. Sed vel nunc non mi suscipit Lorem 
+     ipsum dolor sit amet consectetur adipisicing elit. 
+     
+    </p>
+
+     <ul>
+
+       <li>Lorem ipsum dolor sit amet impussn amet dolum impsum
+       
+       </li>
+
+       <li>
+        itaque ducimus repellat laborum ad autem voluptatibus velit?
+        
+       </li>
+           
+       <li>Lorem ipsum dolor sit amet sit mateh lorem dolor ipsum
+        
+       </li>
+
+       <li>Lorem ipsum dolor sit amet dorum lorem ipsum dolor
+      
        </li>
 
      </ul>
