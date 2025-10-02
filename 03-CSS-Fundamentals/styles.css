@@ -1,7 +1,16 @@
+h1, h2, h3, h4, p, li {
+  font-family: serif;
+  color: #444;
+
+}
+
+h1, h2, h3{
+  color:rgb(0, 191, 191)
+}
+
 h1{
     
     font-size:26px;
-    font-family: sans-serif;
     text-transform: uppercase;
     font-style: italic;
     text-align: center;
@@ -35,4 +44,52 @@ li{
   font-size: 20px;
 }
 
+/*footer p{
+  font-size: 16px;
+}*/
 
+/*article header p {
+  font-style: italic;
+}*/
+
+#author {
+  font-style: italic;
+  font-size: 18px;
+}
+
+#copyright {
+  font-size: 16px;
+  text-align: center;
+}
+
+.related-authors {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/*ul{
+  list-style: none;
+}*/
+
+.related{
+  list-style: none;
+}
+
+.main-header{
+  background-color: #f2f2f2;
+}
+
+aside{
+  background-color: #f2f2f2;
+  border-top: 5px solid rgb(0, 124, 83);
+  border-bottom: 5px solid rgb(0, 124, 83);
+}
+
+
+li:first-child{
+  font-weight: bold;
+}
+
+article p:first-child{
+  
+}
