@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrusel Component</title>
+  <link href="https://fonts.googleapis.com/css2?
+  family=Inter:wght@400;500;700&display=swap"
+  rel="stylesheet">
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;     
+    }
+
+    body{font-family: 'Inter', sans-serif;
+         color: #333;
+        line-height: 1;
+        }
+
+    .carrusel {
+      background-color: blue;
+      width: 800px;
+      margin:100px auto;
+      border-radius: 8px;
+      /*padding: 32px;
+      padding-left: 86px;
+      padding-right: 86px;*/
+      padding : 32ps 86px 32px 86px;
+      display: flex;
+      /*align-items: center;*/
+      gap: 86px;
+      position: relative;
+    }
+
+    .testimonial-text {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 1.5;
+      color: white;
+    }
+
+    .testimonial-author {
+      font-size: 18px;
+      margin-bottom: 16px;
+      color:darkblue;
+    }
+
+    .testimonial-job {
+      font-size: 14px;
+      color: darkblue;
+      margin-top: 4px;
+    }
+
+    .btn {
+      border:none;
+      height: 40px;
+      width: 40px;
+      position: absolute;
+      border-radius: 50%;
+      display: flex
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    .btn-icon {
+      width: 24px;
+      height: 24px;
+      stroke: navy; 
+    }
+
+    .btn-left {
+      left: 0;
+      top: 50%;
+      transform: translate(-50%, -50%);    
+    }
+
+    .btn-right {
+      right: 0;
+      top: 50%;
+      transform: translate(50%, -50%);
+    }
+
+    .btn-icon:hover {
+      stroke: rgb(33, 0, 167);
+      transform: scale(1.2);
+      transition: all 0.3s ease;
+    }
+
+    img{
+      height: 200px;
+      border-radius: 8px;
+      transform: scale(1.5);
+      box-shadow: 0 12 24px rgba(0,0,0,0.25);
+    }
+
+    .dots {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 32px);
+      bottom: 0;
+
+      display: flex;
+      gap: 12px;
+    } 
+
+    .dot {
+      height: 12px;
+      width: 12px;
+      background-color: white;
+      border: 2px solid blue;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    .dot-filled {
+      background-color: blue;
+    }
+
+
+
+
+  </style>
+</head>
+
+<body>
+
+  <div class="carrusel">
+
+    <img src="maria.jpg" alt="maria">
+    <blockquote class="testimonial">
+      <p class="testimonial-text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+         Quasi voluptatem deleniti unde 
+      </p>
+
+      <p class="testimonial-author">
+        - Maria Garcia
+      </p>
+
+      <p class="testimonial-job">
+        Senior Product Manager at EDP Comercial
+      </p>
+    </blockquote>
+
+    <button class="btn btn-left">
+ <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="btn-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+</svg>
+    </button>
+    <button class="btn btn-right">
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="btn-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+</svg>
+    </button>
+
+     <div class="dots">
+    <button class="dot dot-filled">&nbsp;</button>
+    <button class="dot">&nbsp;</button>
+    <button class="dot">&nbsp;</button>
+    <button class="dot">&nbsp;</button>
+  </div>
+  </div>  
+
+ 
+  
+
+  
+
+  
+</body>
+</html>
