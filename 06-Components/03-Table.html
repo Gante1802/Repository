@@ -19,8 +19,40 @@
       font-family: 'Inter', sans-serif;
       color: #333;
       line-height: 1;
+      display: flex;
+      justify-content: center;
+      
     }
 
+    table{
+      width: 800px;
+      margin-top: 100px;
+      /* border: 1px solid #414141; */
+       border-collapse: collapse;
+    }
+
+    td, th {
+      /* border: 1px solid #414141; */
+      padding: 16px 24px;
+      text-align: left;
+    }
+
+    thead th {
+      width: 25%;
+    }
+
+    thead th {
+      background-color: green;
+      color #fff;
+    }
+
+    tbody tr:nth-child(odd) {
+      background-color: rgba(50, 50, 50, 0.1);
+    }
+
+     tbody tr:nth-child(even) {
+      background-color: rgba(255, 255, 255, 0.495);
+     }
   </style>
 </head>
 
@@ -38,13 +70,13 @@
   
     <tbody>
     <tr>
-      <th>width</td>
+      <th>Width</th>
       <td>80 cm</td>
       <td>60 cm</td>
       <td>220 cm</td>
     </tr>
     <tr>
-      <th>Height</td>
+      <th>Height</th>
       <td>100 cm</td>
       <td>110 cm</td>
       <td>90 cm</td>
