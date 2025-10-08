@@ -44,23 +44,80 @@
       background-color: rgb(0, 183, 183);
       color: white;
       grid-column: 2/-1;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      padding: 0 40px;
+      justify-content: space-between;
     }
 
     section {
       background-color: #e9ecef;
+      padding: 40px;
+      overflow: scroll;
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
     }
 
     aside {
       background-color: #e9ecef;
     }
 
+    button {
+      display: inline-block;
+      font-size: 16px;
+      background-color: rgb(0, 144, 144);
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      color: #fff;
+      margin: 5px;
+  
+    }
+
+    button:last-child {
+      background-color: red;
+      margin-left: auto;
+    }
+
+    .email-list {
+      background-color: rgba(206, 206, 206, 0.868);
+      height: 96px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+    } 
+
   </style>
 
 </head>
 <body>
   <nav>Nav</nav>
-  <menu>Menu</menu>
-  <section>Inbox</section>
+  <menu>
+    <button>New</button>
+    <button>Reply</button>
+    <button>Forward</button>
+    <button>Mark Unread</button>
+    <button>Delete</button>
+  </menu>
+
+  <section>
+    <div class="email-list">Email 1</div>
+    <div class="email-list">Email 2</div>
+    <div class="email-list">Email 3</div>
+    <div class="email-list">Email 4</div>
+    <div class="email-list">Email 5</div>
+    <div class="email-list">Email 6</div>
+    <div class="email-list">Email 7</div>
+    <div class="email-list">Email 8</div>
+    <div class="email-list">Email 9</div>
+    <div class="email-list">Email 10</div>
+
+
+  </section>
   <main>Email View</main>
   <aside>Additional Info</aside>
   
