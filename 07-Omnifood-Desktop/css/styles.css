@@ -71,6 +71,23 @@ Background Color: #fae5d3
   margin-right: 1.6rem;
 }
 
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+/************GRID SYSTEM************/
+.grid {
+  display: grid;
+  gap: 9.6rem;
+}
+.grid--2cols {
+  grid-template-columns: repeat(2,1fr);
+}
+
+/************GRID SISTEM END************/
+
 /*****************************/
 
 /*Hero Section*/
@@ -186,3 +203,19 @@ height: 2.2rem;
 }
 /*****************************/
 /*****************************/
+
+/*********How it works********/
+
+.section-how {
+  padding: 9.6rem 0;
+  background-color: #e67e22;
+}
+
+.section-how div div{
+  padding : 10rem;
+  font-size: 50px;
+  background-color: #333;
+}
+
+/*****************************/
+
