@@ -16,6 +16,11 @@ body {
   color: #555;
 }
 
+/*Colors
+Primary Color: #e67e22
+  Secondary Color: #
+Background Color: #fae5d3
+*/
 /*General Reusable Components*/
 /*****************************/
 .btn:link, .btn:visited {
@@ -144,4 +149,40 @@ body {
 .logo {
 height: 2.2rem;
 }
+
+/*Navigation*/
+
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+.main-nav-link:link, 
+.main-nav-link:visited {
+  text-decoration: none;
+  color: #333;
+  font-weight: 700;
+  font-size: 1.6rem;
+  transition: all 0.3s ;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #cf711f;
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  border-radius: 9px;
+  padding: 1.6rem 2.4rem;
+  color: #fff;
+  background-color: #e67e22;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: #cf711f;
+}
+/*****************************/
 /*****************************/
