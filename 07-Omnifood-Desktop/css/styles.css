@@ -83,7 +83,7 @@ Background Color: #fae5d3
   gap: 9.6rem;
 }
 .grid--2cols {
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
 }
 
 /************GRID SISTEM END************/
@@ -208,13 +208,10 @@ height: 2.2rem;
 
 .section-how {
   padding: 9.6rem 0;
-  background-color: #e67e22;
 }
 
-.section-how div div{
-  padding : 10rem;
-  font-size: 50px;
-  background-color: #333;
+.step-img-box {
+  width: 50%;
 }
 
 /*****************************/
