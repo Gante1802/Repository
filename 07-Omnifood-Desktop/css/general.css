@@ -12,6 +12,11 @@ Background Color: #fae5d3
   box-sizing: border-box;
 }
 
+*:focus {
+  outline: none;
+  border: 8px dotted #e67e22
+}
+
 html {
   font-size: 62.5%;
 }
@@ -58,6 +63,8 @@ body {
 
 /*General Reusable Components*/
 /*****************************/
+
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -66,7 +73,14 @@ body {
   text-decoration: none;
   border-radius: 9px;
   transition: background-color 0.5s;
+
+  /**Just for CTA**/
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+
 }
+
 
 .btn--full:link,
 .btn--full:visited {

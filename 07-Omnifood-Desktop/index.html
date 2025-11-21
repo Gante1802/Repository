@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,11 +27,11 @@
     <!-----------------Navigation----------------->
     <nav class="main-nav">
       <ul class="main-nav-list">
-        <li><a class="main-nav-link" href="#">section 1</a></li>
-        <li><a class="main-nav-link" href="#">section 2</a></li>
-        <li><a class="main-nav-link" href="#">section 3</a></li>
-        <li><a class="main-nav-link" href="#">section 4</a></li>
-        <li><a class="main-nav-link nav-cta" href="#">section 5</a></li>
+        <li><a class="main-nav-link" href="HIW">How it works</a></li>
+        <li><a class="main-nav-link" href="Meals">Meals</a></li>
+        <li><a class="main-nav-link" href="Test">Testimonials</a></li>
+        <li><a class="main-nav-link" href="Pricing">Pricing</a></li>
+        <li><a class="main-nav-link nav-cta" href="#">Try it for free</a></li>
       </ul>
     </nav>
   </header>
@@ -103,7 +104,7 @@
 
     <!------------------------End Features Section------------------------>
     <!----------------------- How it Works Section ----------------------->
-    <section class="section-how ">
+    <section class="section-how" id="HIW">
       <div class="container">
         <span class="subheadeing">How it works</span>
         <h2 class="heading-secondary">
@@ -379,7 +380,9 @@
       </div>
     </section>
 
-    <!-- Pricing Section -->
+    <!------------------------End Testimonial section---------------------->
+    <!--------------------------- Pricing Section ------------------------->
+
     <section class="section-pricing">
       <div class="container">
         <span class="subheadeing">Pricing</span>
@@ -473,6 +476,129 @@
       </div>
 
     </section>
+    <!------------------------- End Pricing Section ------------------------->
+
+    <!------------------------- Call to Action Section ------------------------->
+
+    <section class="section-cta">
+      <div class="container">
+        <div class="cta">
+          <div class="cta-text-box">
+            <h2 class="heading-secondary">
+              Get your first meal for free!
+            </h2>
+            <p class="cta-text">
+              Healthy, tasty and hassle-free meals are waiting for you.
+              Start eating well today!. You can cancel or pause anytime.
+              And the first meal is on us!
+            </p>
+
+            <form class="cta-form" action="#">
+
+              <div>
+                <label for="full-name">Full Name</label>
+                <input id="full-name" type="text" placeholder="Jhon Smith" required />
+              </div>
+
+              <div>
+                <label for="email">Enter your email</label>
+                <input id="email" type="email" placeholder="johnsmith@example.com" required />
+              </div>
+
+              <div>
+                <label for="select-where">Where did you hear from us?</label>
+                <select id="select-where" required>
+                  <option value="">Choose one option</option>
+                  <option value="friends">Friends and family</option>
+                  <option value="youtube">Youtube</option>
+                  <option value="facebook">Facebook</option>
+                  <option value="instagram">Instagram</option>
+                </select>
+              </div>
+
+              <Button class="btn btn--form">
+                Signup now
+              </Button>
+            </form>
+          </div>
+          <div class="cta-img-box" role="img" aria-label="Womann enjoying food">Image</div>
+        </div>
+      </div>
+    </section>
+    <!---------------------- End Call to Action Section ---------------------->
+
+    <!--------------------------- Footer Section ------------------------->
+
+    <footer class="footer">
+      <div class="container grid grid--footer">
+        <div class="logo-col">
+          <a href="#" class="footer-logo">
+            <img class="logo" alt="Omnifood logo" src="img/omnifood-logo.png">
+          </a>
+
+          <ul class="social-links">
+            <li>
+              <a class="footer-link" href="#"><ion-icon class="social-icon md hydrated" name="logo-instagram" role="img"
+                  aria-label="logo instagram"></ion-icon></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"><ion-icon class="social-icon md hydrated" name="logo-facebook" role="img"
+                  aria-label="logo facebook"></ion-icon></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"><ion-icon class="social-icon md hydrated" name="logo-twitter" role="img"
+                  aria-label="logo twitter"></ion-icon></a>
+            </li>
+          </ul>
+
+          <p class="copyright">
+            Copyright © 2027 by Omnifood, Inc. All rights reserved.
+          </p>
+        </div>
+        <div class="address-col">
+          <p class="footer-heading">Contact us</p>
+          <address class="contacts">
+            <p class="address">
+              623 Harrison St., 2nd Floor, San Francisco, CA 94107
+            </p>
+            <p>
+              <a class="footer-link" href="tel:415-201-6370">415-201-6370</a><br>
+              <a class="footer-link" href="mailto:hello@omnifood.com">hello@omnifood.com</a>
+            </p>
+          </address>
+        </div>
+        <nav class="nav-col">
+          <p class="footer-heading">Account</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Create account</a></li>
+            <li><a class="footer-link" href="#">Sign in</a></li>
+            <li><a class="footer-link" href="#">iOS app</a></li>
+            <li><a class="footer-link" href="#">Android app</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Company</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">About Omnifood</a></li>
+            <li><a class="footer-link" href="#">For Business</a></li>
+            <li><a class="footer-link" href="#">Cooking partners</a></li>
+            <li><a class="footer-link" href="#">Careers</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav-col">
+          <p class="footer-heading">Resources</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Recipe directory </a></li>
+            <li><a class="footer-link" href="#">Help center</a></li>
+            <li><a class="footer-link" href="#">Privacy &amp; terms</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+
 
   </main>
 
