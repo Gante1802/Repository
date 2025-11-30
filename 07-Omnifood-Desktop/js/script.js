@@ -11,6 +11,18 @@ console.log(h1);
 //   h1.style.padding = "5rem";
 // } );
 
+
+///////////////////////////////////////////////////
+const btnNav = document.querySelector(".btn-mobile-nav");
+const headerEl = document.querySelector(".header");
+btnNav.addEventListener("click", function () {
+  headerEl.classList.toggle("nav-open");
+});
+
+
+("nav-open");
+
+//////////////////////////////////////////////////
 const yearEl = document.querySelector(".year");
 const currentYear = new Date().getFullYear();
 console.log(currentYear)
